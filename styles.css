@@ -303,6 +303,9 @@ footer p{
         grid-template-columns: 1fr 1fr 1fr 1fr;
 
     }
+    nav li{
+        text-transform: uppercase;
+    }
     nav a{
         color:var(--dark-gray);
         text-decoration: none;
@@ -343,7 +346,9 @@ footer p{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    
+    nav a:hover{
+        color:var(--white);
+    }
 }
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
 @media screen and (min-width:1280px){
