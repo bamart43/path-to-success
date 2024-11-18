@@ -63,7 +63,7 @@ table {
 }
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
 body{
-    font-family:"Inter", serif;
+    font-family:"Inter", sans-serif;
     background-color: var(--purple);
     color:var(--dark-gray);
 
@@ -81,16 +81,24 @@ h1{
     border-bottom-right-radius: 20px;
     padding-top: 3.5rem;
     padding-bottom: 2rem;
+    z-index: 2;
 }
 header p{
     background-color: var(--pink);
     color:var(--white);
-    padding-top: 1rem;
+    padding-top: 1.2rem;
     text-align: center;
     margin:0 10px;
-    padding-bottom: 4px;
+    padding-bottom: 3px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    position:relative;
+    bottom:10px;
+    z-index: -1;
+    
+}
+header #large-screen{
+    display:none;
 }
 nav h2{
     font-size: 1.5em;
@@ -122,6 +130,7 @@ h4{
     font-size:1.15em;
     color: var(--purple);
     padding:8px 0;
+    
 }
 #our-services section{
     display:grid;
@@ -232,6 +241,12 @@ footer p{
         display:grid;
         grid-template-columns: 1fr 1fr;
 
+    }
+    header #large-screen{
+       display: block;
+    }
+    header #small-screen{
+        display:none;
     }
     #one-on-one-coaching h3{
         grid-column: 1/-1;
